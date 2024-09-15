@@ -1,10 +1,10 @@
 {
-  "name": "vite-vue3-chrome-extension-v3",
-  "displayName": "Vite Vue 3 Chrome Extension",
+  "name": "autopass",
+  "displayName": "Autopass",
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "description": "A Vue 3 + Vite project for building Chrome extensions",
+  "description": "Automatic pass/next based on custom criteria.",
   "repository": {
     "type": "git",
     "url": "https://github.com/mubaidr/vite-vue3-chrome-extension-v3"

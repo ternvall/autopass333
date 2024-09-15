@@ -1,5 +1,5 @@
-import { env } from 'node:process'
 import type { ManifestV3Export } from '@crxjs/vite-plugin'
+import { env } from 'node:process'
 import packageJson from './package.json' assert { type: 'json' }
 
 const { version, name, description, displayName } = packageJson
@@ -36,7 +36,8 @@ export default {
   ],
   offline_enabled: true,
   // host_permissions: [],
-  permissions: ['storage', 'tabs', 'background'],
+  permissions: [   "activeTab",'storage', 'background'],
+  host_permissions: ["https://*.tinder.com/*", "https://api.gotinder.com/*"],
   web_accessible_resources: [
     {
       matches: ['*://*/*'],
@@ -48,9 +49,8 @@ export default {
     },
   ],
   icons: {
-    16: 'src/assets/logo.png',
-    24: 'src/assets/logo.png',
-    32: 'src/assets/logo.png',
-    128: 'src/assets/logo.png',
+    16: 'src/assets/icon_16.png',
+    48: 'src/assets/icon_48.png',
+    128: 'src/assets/icon_128.png',
   },
 } as ManifestV3Export
