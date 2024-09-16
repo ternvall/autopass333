@@ -8,28 +8,24 @@ const count = computed(() => store.count)
 
 <template>
   <div class="m-4 flex flex-col gap-y-2">
-
-
-
-
     <p>Count: {{ count }}</p>
-
     <div class="flex gap-x-2 justify-center">
-      <button
-        class="btn btn-primary"
-        @click="store.increment"
-      >
+      <button class="btn btn-primary" @click="store.increment">
         Increment
       </button>
-      <button
-        class="btn btn-primary"
-        @click="store.decrement"
-      >
+      <button class="btn btn-primary" @click="store.decrement">
         Decrement
       </button>
     </div>
 
-    <RouterLink class="underline"  to="/common/about">About</RouterLink>
+    <p>Count: {{ count }}</p>
+    <div class="flex gap-x-2 justify-center">
+      <v-slider max="140" min="0" @click="store.increment" />
+    </div>
+
+    <RouterLink class="underline" to="/common/about">
+      About
+    </RouterLink>
   </div>
 </template>
 

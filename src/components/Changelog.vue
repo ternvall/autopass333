@@ -12,7 +12,6 @@ const version = __VERSION__
     >
       <p>
         Version: {{ version }}
-
       </p>
       <h1>Changelog</h1>
     </div>
