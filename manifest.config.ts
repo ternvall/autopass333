@@ -30,12 +30,11 @@ export default {
     {
       all_frames: true,
       js: ['src/content-script/index.ts'],
-      matches: ['*://*/*'],
+      matches: ['https://*.tinder.com/app/*'],
       run_at: 'document_end',
     },
   ],
   offline_enabled: true,
-  // host_permissions: [],
   permissions: [   "activeTab",'storage', 'background'],
   host_permissions: ["https://*.tinder.com/*", "https://api.gotinder.com/*"],
   web_accessible_resources: [
