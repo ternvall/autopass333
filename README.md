@@ -6,12 +6,16 @@ Lets you set up criteria for automatic next'ing unwanted profiles.
 ## Technologies:
 
 - Based off [vite-vue3-browser-extension-v3](https://github.com/mubaidr/vite-vue3-browser-extension-v3)
-  - pnpm
-  - Vite
-  - Vue 3
-  - Vuetify 3
-  - Material Design Icons
-  - Tailwind
+  - pnpm (package management)
+  - Vite  (bundle js)
+  - Vue 3 (framework)
+  - Vuetify 3 (componenets)
+  - pinia (store)
+  - Material Design Icons (icons)
+  - Tailwind (readability)
+
+
+
 ## Project Setup
  - `pnpm i`
  - `pnpm build`
