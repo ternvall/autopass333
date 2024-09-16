@@ -12,12 +12,14 @@ chrome.runtime.onInstalled.addListener(async (opt) => {
     })
   }
 
+  /*
   if (opt.reason === 'update') {
     chrome.tabs.create({
       active: true,
       url: chrome.runtime.getURL('./src/setup/index.html?type=update'),
     })
   }
+    */
 })
 
 console.log('hello world from background')
@@ -28,4 +30,4 @@ self.onerror = function (message, source, lineno, colno, error) {
   )
 }
 
-export {}
+export { }
