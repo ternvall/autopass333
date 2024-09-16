@@ -18,14 +18,15 @@ const count = computed(() => store.count)
       </button>
     </div>
 
-    <p>Count: {{ count }}</p>
+    <p>
+      <v-icon mr-2 icon="mdi-account-details" color="black"/>
+      <span>Distance: {{ count }}</span>
+    </p>
     <div class="flex gap-x-2 justify-center">
-      <v-slider max="140" min="0" @click="store.increment" />
+      <v-slider density="compact" name="Distance" max="140" min="0" @click="store.increment" />
     </div>
 
-    <RouterLink class="underline" to="/common/about">
-      About
-    </RouterLink>
+    <RouterLink class="underline" to="/common/about">About</RouterLink>
   </div>
 </template>
 

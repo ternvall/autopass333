@@ -1,9 +1,14 @@
 import '@/assets/base.scss'
+import '@mdi/font/css/materialdesignicons.css'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router/auto'
-import App from './app.vue'
+import { createVuetify } from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
+import 'vuetify/styles'
 import routes from '~pages'
+import App from './app.vue'
 import './index.scss'
 
 routes.push({
@@ -16,7 +21,9 @@ const router = createRouter({
   routes,
 })
 
-createApp(App).use(router).use(createPinia()).mount('#app')
+const vuetify = createVuetify({ components, directives })
+
+createApp(App).use(vuetify).use(router).use(createPinia()).mount('#app')
 
 console.log(router.getRoutes())
 
